@@ -1,24 +1,24 @@
 {
-  "commit": "c7a2efd05d0594e6a956c790376162b79472b25e",
+  "commit": "544e62b258d2178f21961f8039ea8310970cff0a",
   "metrics": [
     {
       "badge": true,
       "id": "backend-coverage",
       "kind": "percent",
-      "label": "backend line coverage",
+      "label": "backend coverage",
       "value": 84
     },
     {
       "badge": true,
       "id": "backend-loc",
-      "kind": "count",
-      "label": "backend lines of code",
+      "kind": "loc",
+      "label": "backend LOC",
       "value": 22807
     },
     {
       "badge": true,
       "id": "backend-tests",
-      "kind": "count",
+      "kind": "tests",
       "label": "backend tests",
       "value": 279
     },
@@ -26,24 +26,24 @@
       "badge": true,
       "id": "renderer-coverage",
       "kind": "percent",
-      "label": "renderer line coverage",
+      "label": "renderer coverage",
       "value": 75.76
     },
     {
       "badge": true,
       "id": "renderer-loc",
-      "kind": "count",
-      "label": "renderer lines of code",
+      "kind": "loc",
+      "label": "renderer LOC",
       "value": 25610
     },
     {
       "badge": true,
       "id": "renderer-tests",
-      "kind": "count",
+      "kind": "tests",
       "label": "renderer tests",
       "value": 593
     }
   ],
   "project": "pumpbuddy",
-  "timestamp": "2026-11-15T19:33:33Z"
+  "timestamp": "2026-11-15T19:56:32Z"
 }
