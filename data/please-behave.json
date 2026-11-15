@@ -1,0 +1,28 @@
+{
+  "commit": "04f08bdca0f306678452d8f692c42cf402645592",
+  "metrics": [
+    {
+      "badge": true,
+      "id": "coverage",
+      "kind": "percent",
+      "label": "coverage",
+      "value": 93.82
+    },
+    {
+      "badge": true,
+      "id": "loc",
+      "kind": "loc",
+      "label": "LOC",
+      "value": 9755
+    },
+    {
+      "badge": true,
+      "id": "tests",
+      "kind": "tests",
+      "label": "tests",
+      "value": 298
+    }
+  ],
+  "project": "please-behave",
+  "timestamp": "2026-11-15T20:38:48Z"
+}
