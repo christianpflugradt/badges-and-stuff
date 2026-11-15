@@ -1,5 +1,5 @@
 {
-  "commit": "d269396c57bd686e334762e6b85fca1e9f65aae7",
+  "commit": "9a2958c8c75f1aa87a57375b055c245a079d1b8a",
   "metrics": [
     {
       "badge": true,
@@ -14,8 +14,22 @@
       "kind": "percent",
       "label": "instruction coverage",
       "value": 94.13
+    },
+    {
+      "badge": true,
+      "id": "loc",
+      "kind": "count",
+      "label": "lines of code",
+      "value": 11654
+    },
+    {
+      "badge": true,
+      "id": "tests",
+      "kind": "count",
+      "label": "tests",
+      "value": 1120
     }
   ],
   "project": "passbird",
-  "timestamp": "2026-11-15T19:01:00Z"
+  "timestamp": "2026-11-15T19:26:11Z"
 }
