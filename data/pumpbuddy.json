@@ -1,0 +1,21 @@
+{
+  "commit": "2957a2df3db17de29d61a3c7bd8889e8e8f176fb",
+  "metrics": [
+    {
+      "badge": true,
+      "id": "backend-coverage",
+      "kind": "percent",
+      "label": "backend line coverage",
+      "value": 84
+    },
+    {
+      "badge": true,
+      "id": "renderer-coverage",
+      "kind": "percent",
+      "label": "renderer line coverage",
+      "value": 75.76
+    }
+  ],
+  "project": "pumpbuddy",
+  "timestamp": "2026-11-15T19:04:28Z"
+}
