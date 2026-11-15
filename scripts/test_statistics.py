@@ -11,7 +11,9 @@ def payload(**changes):
         "project": "pumpbuddy",
         "commit": "a" * 40,
         "timestamp": "2026-01-31T12:00:00Z",
-        "metrics": [{"id": "backend-coverage", "label": "backend coverage", "value": 87.34, "kind": "percent", "badge": True}],
+        "metrics": [
+            {"id": "backend-coverage", "label": "backend coverage", "value": 87.34, "kind": "percent", "badge": True}
+        ],
     }
     result.update(changes)
     return result

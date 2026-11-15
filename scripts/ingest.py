@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Validate a statistics payload and store it as data/<project>.json."""
+
 import json
 import math
 import re

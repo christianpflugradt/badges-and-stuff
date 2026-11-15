@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Render the Pages site from data/*.json: an SVG badge per metric that asks for one, plus an index."""
+
 import json
 import shutil
 import sys
@@ -63,7 +64,7 @@ def index(entries):
         items = "".join(
             f'<li><img src="{escape(project)}/{escape(m["id"])}.svg" alt="{escape(m["label"])}"></li>'
             if m["badge"]
-            else f'<li>{escape(m["label"])}: {escape(message(m))}</li>'
+            else f"<li>{escape(m['label'])}: {escape(message(m))}</li>"
             for m in payload["metrics"]
         )
         rows.append(
