@@ -3,18 +3,18 @@
 ## Purpose
 
 Central GitHub Pages site for statistics that my projects calculate in CI and send here. It stores
-the latest values per project and renders badges for the metrics that ask for one. The README is
-the single reference for the payload and for onboarding a project.
+the latest values per project and renders badges for the metrics that ask for one. `docs/payload.md` is
+the single reference for the payload.
 
 ## Principles
 
 - Prefer the smallest coherent solution. The scripts use only the Python standard library; add no
   dependencies, services or abstractions for hypothetical needs.
 - The payload is a contract with every project's `Statistics` workflow. Change it only together
-  with the README, the validation, the tests and, when needed, the projects.
+  with `docs/payload.md`, the validation, the tests and, when needed, the projects.
 - `data/*.json` is written by the `Pages` workflow only; never edit it by hand.
 - Keep source, documentation and user-facing output in English. State each fact once.
-- Never commit credentials. The token that projects use lives only in their repository secrets.
+- Never commit credentials.
 - Review the complete change for contradictions, stale references and unnecessary additions.
 
 ## Repository governance
