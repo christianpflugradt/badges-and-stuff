@@ -1,4 +1,4 @@
 passbird
 pumpbuddy
 passingby
-please-behave
+please-behave-cli
