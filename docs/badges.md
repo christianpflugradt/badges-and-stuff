@@ -24,7 +24,7 @@ Labels are lowercase and short; the label alone must be understandable.
 | Badge | Kind | Color |
 | --- | --- | --- |
 | `build` | GitHub status badge | GitHub's own |
-| `release` | shields.io | `#007ec6` (default blue) |
+| `release` | shields.io | shields.io's own, by version (blue, orange before 1.0.0) |
 | `license` | shields.io | `#3949ab` |
 | `tests` | `tests` | `#00897b` |
 | `LOC` | `loc` | `#8e44ad` |
@@ -41,7 +41,7 @@ Percentages follow one scale for every project. The color is blended linearly be
 | 85 | `#97ca00` |
 | 100 | `#44cc11` |
 
-Red, orange, yellow and green are reserved for percentages and build status; use none of them for other badges.
+Red, orange, yellow and green are reserved for percentages and build status; use none of them for other badges, except the `release` badge, which keeps the color shields.io picks for the version.
 
 ## Width
 
@@ -49,4 +49,4 @@ A badge is as wide as its text: 6 px per character, plus 10 px padding for the l
 
 ## Shields.io badges
 
-Set the license color in the URL, for example `https://img.shields.io/badge/license-Apache%202.0-3949ab.svg`. Keep the release badge at its default color.
+Set the license color in the URL, for example `https://img.shields.io/badge/license-Apache%202.0-3949ab.svg`. Do not set a color on the release badge; shields.io colors it by version.
