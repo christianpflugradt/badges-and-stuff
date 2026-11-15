@@ -1,0 +1,28 @@
+{
+  "commit": "497258b7348149884c0a91d9a19a0273858dd341",
+  "metrics": [
+    {
+      "badge": true,
+      "id": "coverage",
+      "kind": "percent",
+      "label": "coverage",
+      "value": 94.82
+    },
+    {
+      "badge": true,
+      "id": "loc",
+      "kind": "loc",
+      "label": "LOC",
+      "value": 6461
+    },
+    {
+      "badge": true,
+      "id": "tests",
+      "kind": "tests",
+      "label": "tests",
+      "value": 38
+    }
+  ],
+  "project": "passingby",
+  "timestamp": "2026-11-15T20:24:15Z"
+}
