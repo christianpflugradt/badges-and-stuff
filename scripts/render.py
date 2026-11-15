@@ -8,12 +8,11 @@ from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CHAR_WIDTH = 7
+CHAR_WIDTH = 6
 PADDING = 10
 UNKNOWN_COLOR = "#9f9f9f"
-COUNT_COLOR = "#007ec6"
-PERCENT_COLORS = ((50, "#e05d44"), (70, "#fe7d37"), (85, "#dfb317"), (90, "#97ca00"))
-PERCENT_TOP_COLOR = "#4c1"
+KIND_COLORS = {"tests": "#00897b", "loc": "#8e44ad", "count": "#546e7a"}
+PERCENT_STOPS = ((0, "#e05d44"), (50, "#fe7d37"), (70, "#dfb317"), (85, "#97ca00"), (100, "#44cc11"))
 
 
 def message(metric):
@@ -27,13 +26,28 @@ def message(metric):
     return str(int(value)) if float(value).is_integer() else f"{value:.2f}"
 
 
+def blend(value):
+    for (low, low_color), (high, high_color) in zip(PERCENT_STOPS, PERCENT_STOPS[1:]):
+        if value <= high:
+            share = (value - low) / (high - low)
+            channels = (
+                round(int(a, 16) + (int(b, 16) - int(a, 16)) * share)
+                for a, b in zip(
+                    (low_color[i : i + 2] for i in (1, 3, 5)),
+                    (high_color[i : i + 2] for i in (1, 3, 5)),
+                )
+            )
+            return "#" + "".join(f"{channel:02x}" for channel in channels)
+    return PERCENT_STOPS[-1][1]
+
+
 def color(metric):
     value = metric["value"]
     if value is None:
         return UNKNOWN_COLOR
-    if metric["kind"] == "count":
-        return COUNT_COLOR
-    return next((c for limit, c in PERCENT_COLORS if value < limit), PERCENT_TOP_COLOR)
+    if metric["kind"] == "percent":
+        return blend(value)
+    return KIND_COLORS[metric["kind"]]
 
 
 def badge(metric):

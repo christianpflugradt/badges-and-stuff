@@ -4,7 +4,7 @@
 
 Central GitHub Pages site for statistics that my projects calculate in CI and send here. It stores
 the latest values per project and renders badges for the metrics that ask for one. `docs/payload.md` is
-the single reference for the payload.
+the single reference for the payload and `docs/badges.md` for how projects show badges.
 
 ## Principles
 

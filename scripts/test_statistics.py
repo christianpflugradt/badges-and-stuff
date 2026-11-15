@@ -47,13 +47,21 @@ class IngestTest(unittest.TestCase):
 
 
 class RenderTest(unittest.TestCase):
-    def test_colors_percentages_by_range(self):
+    def test_blends_percentages_along_the_scale(self):
         metric = {"label": "coverage", "kind": "percent"}
-        self.assertEqual(render.color({**metric, "value": 10}), "#e05d44")
-        self.assertEqual(render.color({**metric, "value": 95}), "#4c1")
+        self.assertEqual(render.color({**metric, "value": 0}), "#e05d44")
+        self.assertEqual(render.color({**metric, "value": 85}), "#97ca00")
+        self.assertEqual(render.color({**metric, "value": 100}), "#44cc11")
+        self.assertNotEqual(render.color({**metric, "value": 84}), render.color({**metric, "value": 86}))
+
+    def test_colors_counts_by_kind(self):
+        count = {"label": "x", "value": 5}
+        self.assertEqual(render.color({**count, "kind": "tests"}), "#00897b")
+        self.assertEqual(render.color({**count, "kind": "loc"}), "#8e44ad")
+        self.assertEqual(render.color({**count, "kind": "count"}), "#546e7a")
 
     def test_abbreviates_counts_from_one_thousand(self):
-        count = {"label": "loc", "kind": "count"}
+        count = {"label": "loc", "kind": "loc"}
         self.assertEqual(render.message({**count, "value": 999}), "999")
         self.assertEqual(render.message({**count, "value": 1000}), "1k")
         self.assertEqual(render.message({**count, "value": 18340}), "18.3k")
