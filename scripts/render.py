@@ -22,6 +22,8 @@ def message(metric):
         return "n/a"
     if metric["kind"] == "percent":
         return f"{value:.1f}%"
+    if value >= 1000:
+        return f"{value / 1000:.1f}".rstrip("0").rstrip(".") + "k"
     return str(int(value)) if float(value).is_integer() else f"{value:.2f}"
 
 

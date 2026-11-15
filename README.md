@@ -32,7 +32,7 @@ top-level properties):
 
 - `project` must be listed in `projects.txt`.
 - `id` is lowercase words joined by `-` and unique per payload; `label` is the badge text.
-- `kind` is `percent` (0 to 100, colored by range) or `count` (any number zero or above).
+- `kind` is `percent` (0 to 100, colored by range) or `count` (any number zero or above, shown as `18.3k` from 1000).
 - `badge` says whether a badge is rendered; the value is published in `statistics.json` either way.
 - `value` may be `null` when a number is not available; the badge then shows `n/a`.
 

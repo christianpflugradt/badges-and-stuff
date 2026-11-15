@@ -52,6 +52,12 @@ class RenderTest(unittest.TestCase):
         self.assertEqual(render.color({**metric, "value": 10}), "#e05d44")
         self.assertEqual(render.color({**metric, "value": 95}), "#4c1")
 
+    def test_abbreviates_counts_from_one_thousand(self):
+        count = {"label": "loc", "kind": "count"}
+        self.assertEqual(render.message({**count, "value": 999}), "999")
+        self.assertEqual(render.message({**count, "value": 1000}), "1k")
+        self.assertEqual(render.message({**count, "value": 18340}), "18.3k")
+
     def test_shows_unknown_values_as_not_available(self):
         metric = {"label": "coverage", "kind": "percent", "value": None}
         self.assertEqual(render.message(metric), "n/a")
