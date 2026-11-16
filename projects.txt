@@ -4,3 +4,4 @@ passingby
 please-behave-cli
 please-behave-action
 passbird-updater
+hiitbuddy
