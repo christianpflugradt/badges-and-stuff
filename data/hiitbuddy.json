@@ -1,0 +1,35 @@
+{
+  "commit": "cb1ed734dea498b174a70d49d039692644b7fbb3",
+  "metrics": [
+    {
+      "badge": true,
+      "id": "branch-coverage",
+      "kind": "percent",
+      "label": "branch coverage",
+      "value": 79.42
+    },
+    {
+      "badge": true,
+      "id": "line-coverage",
+      "kind": "percent",
+      "label": "line coverage",
+      "value": 92.91
+    },
+    {
+      "badge": true,
+      "id": "loc",
+      "kind": "loc",
+      "label": "LOC",
+      "value": 2897
+    },
+    {
+      "badge": true,
+      "id": "tests",
+      "kind": "tests",
+      "label": "tests",
+      "value": 35
+    }
+  ],
+  "project": "hiitbuddy",
+  "timestamp": "2026-11-16T12:15:40Z"
+}
