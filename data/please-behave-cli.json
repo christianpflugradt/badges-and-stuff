@@ -1,12 +1,12 @@
 {
-  "commit": "c21d36b6276bf8d60ac922168378a310d2a0feb5",
+  "commit": "66737fd104799169ae4139acf85c1b0e390a2a3e",
   "metrics": [
     {
       "badge": true,
       "id": "coverage",
       "kind": "percent",
       "label": "coverage",
-      "value": 93.87
+      "value": 93.88
     },
     {
       "badge": true,
@@ -20,9 +20,9 @@
       "id": "tests",
       "kind": "tests",
       "label": "tests",
-      "value": 303
+      "value": 304
     }
   ],
   "project": "please-behave-cli",
-  "timestamp": "2026-11-17T15:51:58Z"
+  "timestamp": "2026-11-17T15:59:53Z"
 }
