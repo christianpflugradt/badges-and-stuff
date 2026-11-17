@@ -8,7 +8,8 @@
   "minimumReleaseAge": "7 days",
   "extends": [
     "config:best-practices",
-    "github>christianpflugradt/please-behave-governance:renovate-governor"
+    "github>christianpflugradt/please-behave-governance:renovate-governor",
+    "github>christianpflugradt/please-behave-governance:renovate-content-aware"
   ],
   "packageRules": [
     {
