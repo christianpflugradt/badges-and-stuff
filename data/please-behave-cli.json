@@ -1,5 +1,5 @@
 {
-  "commit": "05d557ac9ac82e789f27c2936b394fe3ac6d32f8",
+  "commit": "c36792bf011050acb0c9e82bc9e7b499bfc84109",
   "metrics": [
     {
       "badge": true,
@@ -24,5 +24,5 @@
     }
   ],
   "project": "please-behave-cli",
-  "timestamp": "2026-11-17T00:14:29Z"
+  "timestamp": "2026-11-17T02:15:39Z"
 }
