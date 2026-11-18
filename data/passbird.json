@@ -1,12 +1,12 @@
 {
-  "commit": "3add0125b60f55b1ee37bc2e8ddf9a00b5f75b5b",
+  "commit": "cd9d2a4f0573331ac602f0b59457bedb1e885455",
   "metrics": [
     {
       "badge": true,
       "id": "branch-coverage",
       "kind": "percent",
       "label": "branch coverage",
-      "value": 85.96
+      "value": 85.93
     },
     {
       "badge": true,
@@ -31,5 +31,5 @@
     }
   ],
   "project": "passbird",
-  "timestamp": "2026-11-17T15:48:43Z"
+  "timestamp": "2026-11-18T07:31:15Z"
 }
