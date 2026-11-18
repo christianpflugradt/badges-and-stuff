@@ -1,0 +1,18 @@
+purpose: >-
+  Keep the unit tests of the repository's Python scripts passing.
+problem: >-
+  Regressions in the scripts that ingest and render the statistics surface only after
+  the push, in the Pages workflow or in the projects that send their statistics.
+value: >-
+  Broken script behavior is caught before it is pushed.
+conditions:
+  - statement: All tests named test_*.py under the scripts directory pass.
+    rationale: The unit tests are the repository's specification of the script behavior.
+success_criteria:
+  - A failing test fails the Rule and a passing suite passes it.
+  - A crash of the runner is an ERROR, not a failure.
+out_of_scope:
+  - description: Tests outside the scripts directory.
+  - description: Test coverage.
+placement: >-
+  Local, because the test runner belongs to this repository's technology stack.
