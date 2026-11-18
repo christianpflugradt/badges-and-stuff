@@ -7,7 +7,7 @@ fail_fast_terminate_running_instances = false
 [[imports]]
 git = "https://github.com/christianpflugradt/please-behave-governance.git"
 path = "rulesets/repository-conventions"
-ref = "a65baa4daaa8229bdcd342636b4f5606967548c5"
+ref = "da37ce8bc5772b150479db3f14ffecbc873b4bb1"
 
 [imports.rule_parameters.agents-size]
 max_tokens = "1500"
@@ -18,12 +18,15 @@ scopes_file = ".please/commit-scopes.txt"
 [[imports]]
 git = "https://github.com/christianpflugradt/please-behave-governance.git"
 path = "rulesets/security"
-ref = "a65baa4daaa8229bdcd342636b4f5606967548c5"
+ref = "da37ce8bc5772b150479db3f14ffecbc873b4bb1"
+
+[imports.rule_parameters.dependency-audit-workflow]
+dependencies = "none"
 
 [[imports]]
 git = "https://github.com/christianpflugradt/please-behave-governance.git"
 path = "rulesets/open-source-software"
-ref = "a65baa4daaa8229bdcd342636b4f5606967548c5"
+ref = "da37ce8bc5772b150479db3f14ffecbc873b4bb1"
 
 [imports.rule_parameters.license]
 target = "LICENSE"
