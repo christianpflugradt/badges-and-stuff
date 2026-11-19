@@ -1,5 +1,5 @@
 {
-  "commit": "6582472270b09c441aa6e82c2a92532093142e49",
+  "commit": "25d85fa93eb192be2141c19d07c40b4161ae8e57",
   "metrics": [
     {
       "badge": true,
@@ -31,5 +31,5 @@
     }
   ],
   "project": "passbird-updater",
-  "timestamp": "2026-11-19T21:09:58Z"
+  "timestamp": "2026-11-19T22:05:52Z"
 }
