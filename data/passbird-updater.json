@@ -1,5 +1,5 @@
 {
-  "commit": "b02ef8a8433e29bb07f8b211e2fbcbd603698443",
+  "commit": "9ef441054b8e3c1ab933e67ea00306e71733564e",
   "metrics": [
     {
       "badge": true,
@@ -13,7 +13,7 @@
       "id": "instruction-coverage",
       "kind": "percent",
       "label": "instr. coverage",
-      "value": 54.18
+      "value": 54.24
     },
     {
       "badge": true,
@@ -27,9 +27,9 @@
       "id": "tests",
       "kind": "tests",
       "label": "tests",
-      "value": 14
+      "value": 15
     }
   ],
   "project": "passbird-updater",
-  "timestamp": "2026-11-19T17:03:53Z"
+  "timestamp": "2026-11-19T17:08:20Z"
 }
