@@ -1,19 +1,19 @@
 {
-  "commit": "8a08201c15e6fc930f5c4ec5e46596e9db120a56",
+  "commit": "c08aa9d2dac892cc4a68c753f644c91d6caa51e4",
   "metrics": [
     {
       "badge": true,
       "id": "branch-coverage",
       "kind": "percent",
       "label": "branch coverage",
-      "value": 57.21
+      "value": 58.56
     },
     {
       "badge": true,
       "id": "instruction-coverage",
       "kind": "percent",
       "label": "instr. coverage",
-      "value": 53.97
+      "value": 54.18
     },
     {
       "badge": true,
@@ -31,5 +31,5 @@
     }
   ],
   "project": "passbird-updater",
-  "timestamp": "2026-11-19T16:13:46Z"
+  "timestamp": "2026-11-19T16:29:03Z"
 }
