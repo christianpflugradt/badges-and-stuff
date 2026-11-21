@@ -1,0 +1,28 @@
+{
+  "commit": "db49d71dbec68c561f5d26f5f90d98a3af786332",
+  "metrics": [
+    {
+      "badge": true,
+      "id": "coverage",
+      "kind": "percent",
+      "label": "coverage",
+      "value": 66.67
+    },
+    {
+      "badge": true,
+      "id": "loc",
+      "kind": "loc",
+      "label": "LOC",
+      "value": 14
+    },
+    {
+      "badge": true,
+      "id": "tests",
+      "kind": "tests",
+      "label": "tests",
+      "value": 1
+    }
+  ],
+  "project": "please-behave-gateway",
+  "timestamp": "2026-11-21T15:03:40Z"
+}
