@@ -26,6 +26,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: main # A queued run must start from the latest data, not from the commit of its trigger.
 
       - name: Store statistics payload
         if: github.event_name == 'repository_dispatch'
