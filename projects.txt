@@ -5,3 +5,6 @@ please-behave-cli
 please-behave-action
 passbird-updater
 hiitbuddy
+please-behave-gateway
+please-behave-ledger
+please-behave-cockpit
