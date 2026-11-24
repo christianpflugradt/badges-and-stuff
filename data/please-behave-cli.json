@@ -1,28 +1,28 @@
 {
-  "commit": "55ac17572c61c83b7a81894bd848b7fb15ae8b4b",
+  "commit": "f076e5b2f5857a440e8dc54db8e483644689e292",
   "metrics": [
     {
       "badge": true,
       "id": "coverage",
       "kind": "percent",
       "label": "coverage",
-      "value": 94.29
+      "value": 93.93
     },
     {
       "badge": true,
       "id": "loc",
       "kind": "loc",
       "label": "LOC",
-      "value": 11099
+      "value": 11219
     },
     {
       "badge": true,
       "id": "tests",
       "kind": "tests",
       "label": "tests",
-      "value": 383
+      "value": 386
     }
   ],
   "project": "please-behave-cli",
-  "timestamp": "2026-11-24T02:12:02Z"
+  "timestamp": "2026-11-24T08:15:34Z"
 }
