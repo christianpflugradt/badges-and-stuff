@@ -1,28 +1,28 @@
 {
-  "commit": "a556b73f7db89d0b9cfedb71aa17e936c87c1123",
+  "commit": "e6457c30b6c60bcd5fd835640307739db862705e",
   "metrics": [
     {
       "badge": true,
       "id": "coverage",
       "kind": "percent",
       "label": "coverage",
-      "value": 92.67
+      "value": 92.8
     },
     {
       "badge": true,
       "id": "loc",
       "kind": "loc",
       "label": "LOC",
-      "value": 897
+      "value": 970
     },
     {
       "badge": true,
       "id": "tests",
       "kind": "tests",
       "label": "tests",
-      "value": 24
+      "value": 25
     }
   ],
   "project": "please-behave-cockpit",
-  "timestamp": "2026-11-25T17:12:16Z"
+  "timestamp": "2026-11-25T17:36:14Z"
 }
